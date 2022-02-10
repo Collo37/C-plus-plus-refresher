@@ -1,15 +1,17 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main() {
-    // to concatenate strings ==> "string one" "string two"
-    string greeting = "Hello world! \n" "Ola Mundo!";
-    string introduction ("My name is Collins. Nice to meet you.");
+    string name = "Collins Oduor";
 
-    cout << "Greeting: " << greeting << endl;
-    cout << "Introduction: " << introduction << endl;
+    cout << name << endl;
 
+    // string methods
+    cout << name.length() << endl;
+    cout << name[name.length() - 1] << endl;
+    cout << name.find("Oduor") << endl; // return the starting index of the find argument
+    cout << name.substr(8, name.length() - 1) << endl;
+    
     return 0;
 }
